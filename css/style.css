@@ -79,7 +79,7 @@ html, body {
   height: 400px;
   background-size: 400px 400px;
   background-repeat: no-repeat;
-  background-image: url("http://i273.photobucket.com/albums/jj203/xlustme/Sugar%20yarn/pokedex_zps7i2uf5w4.jpg");
+  background-image: url("../images/pokedex.jpg");
 }
 
 .box-2 figure {
@@ -88,7 +88,7 @@ html, body {
   height: 400px;
   background-size: 400px 400px;
   background-repeat: no-repeat;
-  background-image: url("http://i273.photobucket.com/albums/jj203/xlustme/Sugar%20yarn/98969012-9678-4a7f-9f46-4177e2ac9d0e_zps0zlm4iaw.jpg");
+  background-image: url("../images/other-projects.jpg");
 }
 
 .box-3 figure {
@@ -97,7 +97,7 @@ html, body {
   height: 400px;
   background-size: 400px 400px;
   background-repeat: no-repeat;
-  background-image: url("http://i273.photobucket.com/albums/jj203/xlustme/Sugar%20yarn/patterns-2_zpsvazdz33l.jpg");
+  background-image: url("../images/patterns.jpg");
 }
 
 /* .box-4 figure {
@@ -108,5 +108,3 @@ html, body {
   background-repeat: no-repeat;
   background-image: url("http://i273.photobucket.com/albums/jj203/xlustme/Sugar%20yarn/about_zps7bjcfslm.jpg");
 } */
-
-
