@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Poiret+One|Jaldi|Raleway');
+@import url('fonts/HelveticaNeue-light.oft');
 
 html, body {
   background-color: #E5E5E5;
@@ -19,28 +20,33 @@ html, body {
   /*background-color: #ddefec;*/
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-/*   border-bottom: 0.2px solid #dddddd;
-  box-shadow:0px 1px 5px #eeeeee; */
+  /*border-bottom: 0.2px solid #dddddd;
+  box-shadow:0px 1px 5px #eeeeee;*/
 }
 
 #title {
   color: #FF6B6B;
-/*   background-color: #555555; */
+  /*background-color: #555555;*/
   font-family: "Poiret One", serif;
   font-size: 40px;
   font-weight: bold;
   display: flex;
-  align-items: flex-top;
+  align-items: center;
   margin: 30px;
+}
+
+#title img {
+  width: 200px;
+  height: 200px;
 }
 
 .navbar {
   width: 100%;
   height: auto;
   display: flex;
-/*   background-color: #ffffff; */
+  /*background-color: #ffffff;*/
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
@@ -57,12 +63,12 @@ html, body {
 
 #boxes {
   width: auto;
-/*   background-color: #ffffff; */
-  height: 100%;
+  /*background-color: #ffffff;*/
+  height: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items: flex-start;
   flex-wrap: wrap;
   flex-shrink: 200;
   align-content: space-between;
@@ -75,11 +81,12 @@ html, body {
   background-size: 400px 400px;
   background-repeat: no-repeat;
   background-position: center;
-  box-shadow:0px 1px 5px #cccccc;
+  border-radius: 50%;
+  /*box-shadow:0px 1px 5px #cccccc;*/
 }
 
 #box-1 {
-  background-image: url("../images/pokedex.jpg");
+  background-image: url("../images/pokedex.png");
 }
 
 #box-2 {
@@ -92,17 +99,24 @@ html, body {
 
 .box h6 {
   margin: 0;
+  padding: 15%;
+  font-family: "Helvetica neue light", "Helvetica light", sans serif;
+  /*font-weight: lighter;*/
   text-align: center;
+  font-size: 27px;
 }
 
 #box-text-1 {
-  color: #FF3135;
+  color: #CF834D;
+  color: #515155;
 }
 
 #box-text-2 {
-  color: #31FF35;
+  color: #FF8DA1;
+  color: #515155;
 }
 
 #box-text-3 {
-  color: #3131FF;
+  color: #93C8D0;
+  color: #515155;
 }
