@@ -1,4 +1,4 @@
 # alysanne.github.io
 Website - Portfolio
 
-Tests and ideas for my digital portfolio.
+Personal website with own projects.
