@@ -92,7 +92,7 @@ html, body {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
-  /*box-shadow:0px 1px 1px #cccccc;*/
+  box-shadow:0px 1px 3px #D4D4D4;
 }
 
 #box-1 {
@@ -107,38 +107,23 @@ html, body {
   background-image: url("../images/patterns.jpg");
 }
 
-#text-background-1, #text-background-2, #text-background-3 {
+.text-background {
   width: 350px;
   height: 90px;
-  border-radius: 175px 175px 0 0;
-  background-color: black;
 }
 
-.box h6 {
+.box h6, .box p {
   margin: 0;
-  padding: 12%;
   font-family: "HelveticaNeue-light", "Helvetica light", sans serif;
   /*font-weight: lighter;*/
   text-align: center;
-  font-size: 27px;
-}
-
-#box-text-1, #box-text-2, #box-text-3 {
   color: #313135;
 }
 
-#text-background-1 {
-  background: rgba(207, 131, 77, 0.3);
+.box h6 {
+  padding: 12%;
+  font-size: 27px;
 }
-
-#text-background-2 {
-  background: rgba(255, 141, 161, 0.3);
-}
-
-#text-background-3 {
-  background: rgba(147, 200, 208, 0.3);
-}
-
 /*#box-text-2 {
   color: #FF8DA1;
   color: #313135;
@@ -148,3 +133,26 @@ html, body {
   color: #93C8D0;
   color: #313135;
 }*/
+
+.box-small {
+  overflow: hidden;
+  margin-top: 15px;
+  width: 200px;
+  height: 200px;
+  background-size: 250px 250px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  box-shadow:0px 1px 3px #D4D4D4;
+}
+
+.text-background-small, #text-background-small-1 {
+  width: 200px;
+  height: 50px;
+}
+
+.box-text-small {
+  color: #313135;
+  font-size: 20px;
+  padding: 9%;
+}
