@@ -1,23 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Poiret+One|Jaldi|Raleway');
-@import url('fonts/HelveticaNeue-light.oft');
 
-html, body {
-  background-color: #E5E5E5;
+
+body {
+  background-color: #FFFFFF;
   width: 100%;
   height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 #container {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 #header {
-  margin: 0px;
-  padding: 20px 60px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
   width: 100%;
-  height: 300px;
-  /*background-color: #ddefec;*/
+  height: 80px;
+  /*background-color: #4ECDC4;*/
+  /*background-color: #FF7878;*/
+  background-color: #FF8080;
+  /*background-color: #2D2D2D;*/
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -26,73 +34,51 @@ html, body {
   box-shadow:0px 1px 5px #eeeeee;*/
 }
 
-#title {
-  color: #FF6B6B;
-  /*background-color: #555555;*/
-  font-family: "Poiret One", serif;
-  font-size: 40px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  margin: 30px;
-}
-
-#title img {
-  width: 200px;
-  height: 200px;
-}
-
 .navbar {
   width: 100%;
   height: auto;
   display: flex;
-  /*background-color: #ffffaa;*/
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   flex-wrap: nowrap;
-}
-
-.section {
-  padding-top: 5px;
+  color: #FFFFFF;
+  font-size: 18px;
 }
 
 .decoration-dot {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 25px;
-  /*background-color: white;*/
 }
 
-.section, .box h6 {
-  font-family: "Raleway", Helvetica, sans serif;
-  font-size: 18px;
-  color: #313135;
-  margin: 15px;
-  /*background-color: pink;*/
+#logo {
+  margin-right: 40px;
+  margin-left: 10px;
 }
 
-#boxes {
-  width: auto;
-  /*background-color: #ffffff;*/
+#content {
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: wrap;
-  flex-shrink: 200;
-  align-content: space-between;
+  align-content: space-evenly;
 }
 
-#box-1, #box-2, #box-3 {
+.box {
+  margin: 0;
+  padding: 0;
   overflow: hidden;
   margin-top: 15px;
-  width: 350px;
-  height: 350px;
-  background-size: 400px 400px;
+  width: 300px;
+  height: 300px;
+  background-size: 350px 350px;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
-  box-shadow:0px 1px 3px #D4D4D4;
+  /*box-shadow:0px 1px 3px #D4D4D4;*/
 }
 
 #box-1 {
@@ -108,31 +94,19 @@ html, body {
 }
 
 .text-background {
-  width: 350px;
-  height: 90px;
-}
-
-.box h6, .box p {
+  padding: 0;
   margin: 0;
-  font-family: "HelveticaNeue-light", "Helvetica light", sans serif;
-  /*font-weight: lighter;*/
-  text-align: center;
-  color: #313135;
+  width: 300px;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  color: #F7F7F7;
+  font-family: 'Raleway', 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 24px;
+  padding-bottom: 7px;
 }
-
-.box h6 {
-  padding: 12%;
-  font-size: 27px;
-}
-/*#box-text-2 {
-  color: #FF8DA1;
-  color: #313135;
-}
-
-#box-text-3 {
-  color: #93C8D0;
-  color: #313135;
-}*/
 
 .box-small {
   overflow: hidden;
@@ -146,13 +120,128 @@ html, body {
   box-shadow:0px 1px 3px #D4D4D4;
 }
 
-.text-background-small, #text-background-small-1 {
-  width: 200px;
-  height: 50px;
+
+#title {
+  font-size: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.box-text-small {
-  color: #313135;
-  font-size: 20px;
-  padding: 9%;
+#description {
+  text-align: center;
+}
+
+form {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#pokedex-items {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.poke-item {
+  padding: 0;
+  margin: 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: lightblue;
+}
+
+.poke-item figure {
+  padding: 0;
+  margin: 0;
+  width: 150px;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  color: #F7F7F7;
+  font-family: 'Helvetica Neue';
+  font-size: 14px;
+  padding-bottom: 7px;
+}
+
+.fire figure {
+  background: rgba(255, 105, 97, 0.75);
+}
+
+.grass figure {
+  background: rgba(171, 221, 119, 0.80);
+}
+
+.water figure {
+  background: rgba(173, 216, 230, 0.80);
+}
+
+.normal figure {
+  background: rgba(208, 182, 159, 0.75);
+}
+
+.fighting figure {
+  background: rgba(200, 0, 21, 0.65);
+}
+
+.flying figure {
+  background: rgba(200, 162, 200, 0.75);
+}
+
+.electric figure {
+  background: rgba(255, 205, 88, 0.75);
+}
+
+.psychic figure {
+  background: rgba(247, 97, 123, 0.65);
+}
+
+.ice figure {
+  background: rgba(192, 203, 255, 0.80);
+}
+
+.poison figure {
+  background: rgba(148, 0, 148, 0.5);
+}
+
+.ground figure {
+  background: rgba(227, 187, 81, 0.65);
+}
+
+.rock figure {
+  background: rgba(199, 154, 32, 0.65);
+}
+
+.dragon figure {
+  background: rgba(135, 135, 223, 0.75);
+}
+
+.dark figure {
+  background: rgba(100, 100, 100, 0.5);
+}
+
+.fairy figure {
+  background: rgba(255, 165, 180, 0.75);
+}
+
+.bug figure {
+  background: rgba(212, 227, 84, 0.75);
+}
+
+.ghost figure {
+  background: rgba(140, 96, 170, 0.75);
+}
+
+.steel figure {
+  background: rgba(140, 140, 165, 0.5);
 }

@@ -1,79 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Pokedex</title>
-  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
-  <link rel="stylesheet" href="../css/style.css">
-  <script type="text/javascript" src="js/script-pokedex.js"></script>
+  <meta charset='UTF-8'>
+  <title>Pokédex</title>
+  <link rel='stylesheet' href='../css/style.css'>
+  <script type='text/javascript' src='../js/script-pokedex.js' async></script>
 </head>
 
 <body>
-  <div id="container">
-    <span id="header">
-      <span class="navbar">
-        <span class="decoration-dot">
-          &middot;
-        </span>
-        <span class="section">
-          <h5>Home</h5>
-        </span>
-        <span class="decoration-dot">
-          &middot;
-        </span>
-        <span class="section">
-          <h5>Pokédex</h5>
-        </span>
-        <span class="decoration-dot">
-          &middot;
-        </span>
+  <div id='container'>
+    <div id='header'>
+      <span class='navbar'>
+        <span class='decoration-dot'>&middot;</span>
+        <span class='section'>Home</span>
+        <span class='decoration-dot'>&middot;</span>
+        <span class='section'>Pokédex</span>
+        <span class='decoration-dot'>&middot;</span>
       </span>
-      <span id="title">
-        <img alt="sugar yarn" src="../images/logo-no-background.png"/>
+      <span id='logo'>
+        <img alt='sugar yarn' src='../images/sugar-yarn-logo-2017-small.png'/>
       </span>
-      <span class="navbar">
-        <span class="decoration-dot">
-          &middot;
-        </span>
-        <span class="section">
-          <h5>Projects</h5>
-        </span>
-        <span class="decoration-dot">
-          &middot;
-        </span>
-        <span class="section">
-          <h5>About</h5>
-        </span>
-        <span class="decoration-dot">
-          &middot;
-        </span>
+      <span class='navbar'>
+        <span class='decoration-dot'>&middot;</span>
+        <span class='section'>Projects</span>
+        <span class='decoration-dot'>&middot;</span>
+        <span class='section'>About</span>
+        <span class='decoration-dot'>&middot;</span>
       </span>
     </div>
-    <div id="boxes">
-      <span class="box">
-        <figure class="box-small" style="background-image: url('../images/pokedex.png')">
-          <figure id="text-background-small-1" >
-            <p class="box-text-small">Bulbasaur</p>
-          </figure>
-        </figure>
-      </span>
-      <span class="box">
-        <figure class="box-small" style="background-image: url('../images/pokedex.png')">
-          <figure class="text-background-small" style="background: rgba(207, 131, 77, 0.3)">
-            <p class="box-text-small">Charmander</p>
-          </figure>
-        </figure>
-      </span>
-      <span class="box">
-        <figure class="box-small" style="background-image: url('../images/pokedex.png')">
-          <figure class="text-background-small" style="background: rgba(207, 131, 77, 0.3)">
-            <p class="box-text-small">Squirtle</p>
-          </figure>
-        </figure>
-      </span>
+
+    <div id='content'>
+      <span id='title'>Pokédex</span>
+      <p id='description'>Series of pokémon amigurumi plushies - work in progress.<br>
+         Patterns available for free for personal use only. All rights reserved.</p>
+      <form>
+        <input type='search' id='searchBox' name='searchValue'
+               placeholder='Search' maxlength='15' incremental='incremental'
+               onsearch='selector(searchBox.value, pokemon)'></input>
+      </form>
+      <span id='pokedex-items'></span>
     </div>
-    <div id="footer">
-    </div>
+
+    <div id='footer'></div>
+
   </div>
 </body>
 </html>
