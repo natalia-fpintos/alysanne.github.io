@@ -168,10 +168,16 @@ form {
   flex-direction: row;
   justify-content: center;
   align-items: flex-end;
+  text-align: center;
   color: #F7F7F7;
   font-family: 'Helvetica Neue';
   font-size: 14px;
   padding-bottom: 7px;
+}
+
+.multi-line figure{
+  padding-bottom: 3px;
+  padding-top: 4px;
 }
 
 .fire figure {
