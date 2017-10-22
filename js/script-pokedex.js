@@ -1,46 +1,46 @@
-let pokemon = [{name: 'Bulbasaur', num: '#001', url: '../images/bulbasaur.jpg',
+let pokemon = [{name: 'Bulbasaur', num: '#001', url: '/images/pokedex/bulbasaur-wbw.jpg',
               type: 'grass'},
-              {name: 'Charmander', num: '#004', url: '../images/other-projects.jpg',
+              {name: 'Charmander', num: '#004', url: '/images/pokedex/charmander-wbw.jpg',
               type: 'fire'},
-              {name: 'Charizard', num: '#006', url: '../images/other-projects.jpg',
+              {name: 'Charizard', num: '#006', url: '/images/pokedex/charizard-wbw.jpg',
               type: 'fire'},
-              {name: 'Mega Charizard X', num: '#006', url: '../images/other-projects.jpg',
-              type: 'fire'},
-              {name: 'Squirtle', num: '#007', url: '../images/squirtle-wb.jpg',
+              {name: 'Mega Charizard X', num: '#006', url: '/images/pokedex/charizardx-wbw.jpg',
+              type: 'psychic'},
+              {name: 'Squirtle', num: '#007', url: '/images/pokedex/squirtle-wbw.jpg',
               type: 'water'},
-              {name: 'Pikachu', num: '#025', url: '../images/patterns.jpg',
+              {name: 'Pikachu', num: '#025', url: '/images/pokedex/pikachu-wbw.jpg',
               type: 'electric'},
-              {name: 'Gengar', num: '#094', url: '../images/patterns.jpg',
+              {name: 'Gengar', num: '#094', url: '/images/pokedex/gengar-wbw.jpg',
               type: 'ghost'},
-              // {name: 'Koffing', num: '#109', url: '../images/patterns.jpg',
+              // {name: 'Koffing', num: '#109', url: '/images/patterns.jpg',
               // type: 'poison'},
-              {name: 'Eevee', num: '#133', url: '../images/eevee-wb.jpg',
+              {name: 'Eevee', num: '#133', url: '/images/pokedex/eevee-wbw.jpg',
               type: 'normal'},
-              {name: 'Vaporeon', num: '#134', url: '../images/patterns.jpg',
+              {name: 'Vaporeon', num: '#134', url: '/images/pokedex/vaporeon-wbw.jpg',
               type: 'water'},
-              {name: 'Jolteon', num: '#135', url: '../images/jolteon-wb.jpg',
+              {name: 'Jolteon', num: '#135', url: '/images/pokedex/jolteon-wbw.jpg',
               type: 'electric'},
-              {name: 'Flareon', num: '#136', url: '../images/patterns.jpg',
+              {name: 'Flareon', num: '#136', url: '/images/pokedex/flareon-wbw.jpg',
               type: 'fire'},
-              {name: 'Quilava', num: '#156', url: '../images/patterns.jpg',
-              type: 'fire'},
-              {name: 'Pichu', num: '#172', url: '../images/patterns.jpg',
+              // {name: 'Quilava', num: '#156', url: '/images/pokedex/quilava-wbw.jpg',
+              // type: 'fire'},
+              {name: 'Pichu', num: '#172', url: '/images/pokedex/pichu-wbw.jpg',
               type: 'electric'},
-              {name: 'Ampharos', num: '#181', url: '../images/patterns.jpg',
-              type: 'electric'},
-              {name: 'Umbreon', num: '#197', url: '../images/umbreon-wb.jpg',
+              // {name: 'Ampharos', num: '#181', url: '/images/pokedex/ampharos-wbw.jpg',
+              // type: 'electric'},
+              {name: 'Umbreon', num: '#197', url: '/images/pokedex/umbreon-wbw.jpg',
               type: 'dark'},
-              {name: 'Mega Lucario', num: '#448', url: '../images/patterns.jpg',
-              type: 'fighting'},
-              {name: 'Leafeon', num: '#470', url: '../images/patterns.jpg',
+              // {name: 'Mega Lucario', num: '#448', url: '/images/pokedex/megalucario-wbw.jpg',
+              // type: 'fighting'},
+              {name: 'Leafeon', num: '#470', url: '/images/pokedex/leafeon-wbw.jpg',
               type: 'grass'},
-              // {name: 'Oshawott', num: '#501', url: '../images/patterns.jpg',
+              // {name: 'Oshawott', num: '#501', url: '/images/patterns.jpg',
               // type: 'water'},
-              {name: 'Dedenne', num: '#702', url: '../images/patterns.jpg',
-              type: 'electric'},
-              // {name: 'Pumpkaboo', num: '#710', url: '../images/pokedex.png',
+              // {name: 'Dedenne', num: '#702', url: '/images/patterns.jpg',
+              // type: 'electric'},
+              // {name: 'Pumpkaboo', num: '#710', url: '/images/pokedex.png',
               // type: 'ghost'},
-              {name: 'Rowlet', num: '#722', url: '../images/patterns.jpg',
+              {name: 'Rowlet', num: '#722', url: '/images/pokedex/rowlet-wbw.jpg',
               type: 'grass'}];
 
 
@@ -76,8 +76,6 @@ function visibleItems(v) {
   }
 }
 
-window.onload = create(pokemon);
-
 function selector(value, pokemon) {
   let low = value.toLowerCase();
   visibleItems('none');
@@ -94,3 +92,10 @@ function selector(value, pokemon) {
     }
   }
 }
+
+function animateBoxes() {
+  // document.getElementById
+}
+
+window.onload = create(pokemon);
+// body.onload = animateBoxes();

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Poiret+One|Jaldi|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Poiret+One|Jaldi|Raleway|Quicksand:300,400');
 
 
 body {
@@ -8,6 +8,15 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Raleway', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+a:hover {
+  color: #FFE2E2;
 }
 
 #container {
@@ -21,7 +30,7 @@ body {
   padding: 0;
   margin-bottom: 50px;
   width: 100%;
-  height: 80px;
+  height: 70px;
   /*background-color: #4ECDC4;*/
   /*background-color: #FF7878;*/
   background-color: #FF8080;
@@ -47,18 +56,48 @@ body {
 }
 
 .decoration-dot {
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Jaldi', Arial, sans-serif;
   font-size: 25px;
 }
 
 #logo {
-  margin-right: 40px;
-  margin-left: 10px;
+  /*margin-right: 40px;
+  margin-left: 10px;*/
+  margin-bottom: 10px;
+  font-size: 60px;
+  width: 100%;
+  height:100%;
+  font-family: 'Quicksand','Helvetica Neue', sans-serif;
+  color: #FFFFFF;
+  font-weight: 300;
+  letter-spacing: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  /*background-color: blue;*/
+}
+
+#yarn {
+  width: 55px;
+  margin: 5px;
+  /*background-color: red;*/
 }
 
 #content {
   width: 100%;
   height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-evenly;
+}
+
+#boxes {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -78,19 +117,38 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
-  /*box-shadow:0px 1px 3px #D4D4D4;*/
+  box-shadow:0px 0.5px 7px #EDEDED;
+  -webkit-transition: -webkit-transform 30s ease-in-out 2s;
+  transition: transform 30s ease-in-out 2s;
+}
+
+.box.all-loaded {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 #box-1 {
-  background-image: url("../images/pokedex.png");
+  background-image: url("/images/final/eevee-wbw.jpg");
+}
+
+#box-1 .text-background {
+  background: rgba(207, 131, 77, 0.5);
 }
 
 #box-2 {
-  background-image: url("../images/other-projects.jpg");
+  background-image: url("/images/final/octopus-wbw.jpg");
+}
+
+#box-2 .text-background {
+  background: rgba(255, 141, 161, 0.65)
 }
 
 #box-3 {
-  background-image: url("../images/patterns.jpg");
+  background-image: url("/images/final/squirtle-wbw.jpg");
+}
+
+#box-3 .text-background {
+background: rgba(147, 200, 208, 0.65);
 }
 
 .text-background {
@@ -157,6 +215,11 @@ form {
   border-radius: 50%;
   overflow: hidden;
   background-color: lightblue;
+  box-shadow:0px 0.5px 7px #EDEDED;
+}
+
+.poke-item:hover {
+
 }
 
 .poke-item figure {
@@ -181,23 +244,23 @@ form {
 }
 
 .fire figure {
-  background: rgba(255, 105, 97, 0.75);
+  background: rgba(254, 194, 184, 1);
 }
 
 .grass figure {
-  background: rgba(171, 221, 119, 0.80);
+  background: rgba(208, 226, 152, 1);
 }
 
 .water figure {
-  background: rgba(173, 216, 230, 0.80);
+  background: rgba(186, 224, 243, 1);
 }
 
 .normal figure {
-  background: rgba(208, 182, 159, 0.75);
+  background: rgba(216, 195, 176, 1);
 }
 
 .fighting figure {
-  background: rgba(200, 0, 21, 0.65);
+  background: rgba(228, 135, 147, 1);
 }
 
 .flying figure {
@@ -205,11 +268,11 @@ form {
 }
 
 .electric figure {
-  background: rgba(255, 205, 88, 0.75);
+  background: rgba(255, 220, 150, 1);
 }
 
 .psychic figure {
-  background: rgba(247, 97, 123, 0.65);
+  background: rgba(254, 184, 192, 1);
 }
 
 .ice figure {
@@ -245,7 +308,7 @@ form {
 }
 
 .ghost figure {
-  background: rgba(140, 96, 170, 0.75);
+  background: rgba(178, 173, 237, 1);
 }
 
 .steel figure {

@@ -3,7 +3,7 @@
 <head>
   <meta charset='UTF-8'>
   <title>Sugar Yarn</title>
-  <link rel='stylesheet' href='css/style.css'>
+  <link rel='stylesheet' href='/css/style.css'>
 </head>
 
 <body>
@@ -11,14 +11,12 @@
     <div id='header'>
       <span class='navbar'>
         <span class='decoration-dot'>&middot;</span>
-        <span class='section'>Home</span>
+        <a class='section' href='/index.html'>Home</a>
         <span class='decoration-dot'>&middot;</span>
-        <span class='section'>Pokédex</span>
+        <a class='section' href='/pokedex/index.html'>Pokédex</a>
         <span class='decoration-dot'>&middot;</span>
       </span>
-      <span id='logo'>
-        <img alt='sugar yarn' src='images/sugar-yarn-logo-2017-small.png'/>
-      </span>
+      <a id='logo' href='/index.html'>sugar <img id='yarn' src='/images/yarn.svg'/> yarn</a>
       <span class='navbar'>
         <span class='decoration-dot'>&middot;</span>
         <span class='section'>Projects</span>
@@ -29,21 +27,19 @@
     </div>
 
     <div id='content'>
-      <figure id='box-1' class='box'>
-        <figure class='text-background' style='background: rgba(207, 131, 77, 0.3)'>
-          Eeveelutions
+      <span id='title'>Amigurumi</span>
+      <p id='description'>What would you like to create today?</p>
+      <span id='boxes'>
+        <figure id='box-1' class='box'>
+          <figure class='text-background'>Eeveelutions</figure>
         </figure>
-      </figure>
-      <figure id='box-2' class='box'>
-        <figure class='text-background' style='background: rgba(255, 141, 161, 0.3)'>
-          Miniatures
+        <figure id='box-2' class='box'>
+          <figure class='text-background'>Miniatures</figure>
         </figure>
-      </figure>
-      <figure id='box-3' class='box'>
-        <figure class='text-background' style='background: rgba(147, 200, 208, 0.3)'>
-          Starters
+        <figure id='box-3' class='box'>
+          <figure class='text-background'>Starters</figure>
         </figure>
-      </figure>
+      </span>
     </div>
 
     <div id='footer'></div>
