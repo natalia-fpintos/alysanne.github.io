@@ -128,7 +128,7 @@ a:hover {
 }
 
 #box-1 {
-  background-image: url("/images/final/eevee-wbw.jpg");
+  background-image: url("../images/pokedex/eevee-wbw.jpg");
 }
 
 #box-1 .text-background {
@@ -136,7 +136,7 @@ a:hover {
 }
 
 #box-2 {
-  background-image: url("/images/final/octopus-wbw.jpg");
+  background-image: url("../images/octopus-wbw.jpg");
 }
 
 #box-2 .text-background {
@@ -144,7 +144,7 @@ a:hover {
 }
 
 #box-3 {
-  background-image: url("/images/final/squirtle-wbw.jpg");
+  background-image: url("../images/pokedex/squirtle-wbw.jpg");
 }
 
 #box-3 .text-background {
