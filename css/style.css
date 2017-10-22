@@ -94,7 +94,7 @@ a:hover {
   align-content: space-evenly;
 }
 
-#boxes {
+#boxes, #projects {
   width: 100%;
   height: auto;
   margin-top: 20px;
@@ -113,11 +113,11 @@ a:hover {
   margin-top: 15px;
   width: 300px;
   height: 300px;
-  background-size: 350px 350px;
+  background-size: 350px;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
-  box-shadow:0px 0.5px 7px #EDEDED;
+  box-shadow: 0px 0.5px 7px #EDEDED;
   -webkit-transition: -webkit-transform 30s ease-in-out 2s;
   transition: transform 30s ease-in-out 2s;
 }
@@ -148,7 +148,7 @@ a:hover {
 }
 
 #box-3 .text-background {
-background: rgba(147, 200, 208, 0.65);
+  background: rgba(147, 200, 208, 0.65);
 }
 
 .text-background {
@@ -156,6 +156,7 @@ background: rgba(147, 200, 208, 0.65);
   margin: 0;
   width: 300px;
   height: 70px;
+  text-align: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -179,7 +180,7 @@ background: rgba(147, 200, 208, 0.65);
 }
 
 
-#title {
+.title {
   font-size: 40px;
   width: 100%;
   display: flex;
@@ -238,9 +239,9 @@ form {
   padding-bottom: 7px;
 }
 
-.multi-line figure{
-  padding-bottom: 3px;
-  padding-top: 4px;
+.multi-line figure {
+  padding-top: 5px;
+  padding-bottom: 2px;
 }
 
 .fire figure {
@@ -313,4 +314,88 @@ form {
 
 .steel figure {
   background: rgba(140, 140, 165, 0.5);
+}
+
+#project-1 {
+  background-image: url("../images/wampa2.jpg");
+  background-size: 300px;
+  background-position: bottom;
+}
+
+#project-1 .text-background {
+  background: rgba(200, 200, 200, 1);
+}
+
+#project-2 {
+  background-image: url("../images/octo2.jpg");
+  background-size: 310px;
+  background-position: bottom;
+}
+
+#project-2 .text-background {
+  background: rgba(255, 179, 179, 1);
+  background: rgba(233, 172, 193, 1);
+}
+
+#project-3 {
+  background-image: url("../images/squirtle2.jpg");
+  background-size: 320px;
+  background-position: 35% 20px;
+}
+
+#project-3 .text-background {
+  background: rgba(186, 219, 224, 1);
+}
+
+#project-4 {
+  background-image: url("../images/starbear.jpg");
+  background-size: 300px;
+}
+
+#project-4 .text-background {
+  background: rgba(200, 200, 200, 1);
+  background: rgba(245, 156, 164, 1);
+}
+
+#projects .multi-line {
+  padding-top: 5px;
+  padding-bottom: 2px;
+}
+
+#about-me {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  /*background-color: red;*/
+}
+
+#profile {
+  display: flex;
+  flex-direction: column;
+}
+
+#profile-pic {
+  background-image: url("../images/me1.jpg");
+  width: 250px;
+  height: 250px;
+  background-size: 400px;
+  /*margin-top: 125px;*/
+}
+
+.icon {
+  margin: 10px;
+  margin-top: 50px;
+  width: 35px;
+}
+
+#profile-description {
+  /*background-color: blue;*/
+  width: 50%;
+}
+
+#profile-description p, #profile-description .title {
+  justify-content: flex-start;
+  text-align: left;
 }
