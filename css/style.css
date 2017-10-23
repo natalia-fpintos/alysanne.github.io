@@ -86,6 +86,7 @@ a:hover {
 
 #content {
   width: 100%;
+  width: 80%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -117,7 +118,7 @@ a:hover {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
-  box-shadow: 0px 0.5px 7px #EDEDED;
+  box-shadow: 0px 0.5px 7px #E1E1E1;
   -webkit-transition: -webkit-transform 30s ease-in-out 2s;
   transition: transform 30s ease-in-out 2s;
 }
@@ -167,7 +168,7 @@ a:hover {
   padding-bottom: 7px;
 }
 
-.box-small {
+/*.box-small {
   overflow: hidden;
   margin-top: 15px;
   width: 200px;
@@ -177,7 +178,7 @@ a:hover {
   background-position: center;
   border-radius: 50%;
   box-shadow:0px 1px 3px #D4D4D4;
-}
+}*/
 
 
 .title {
@@ -201,7 +202,7 @@ form {
 }
 
 #pokedex-items {
-  width: 80%;
+  /*width: 80%;*/
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -216,7 +217,7 @@ form {
   border-radius: 50%;
   overflow: hidden;
   background-color: lightblue;
-  box-shadow:0px 0.5px 7px #EDEDED;
+  box-shadow:0px 0.5px 7px #E1E1E1;
 }
 
 .poke-item:hover {
@@ -327,7 +328,7 @@ form {
 }
 
 #project-2 {
-  background-image: url("../images/octo2.jpg");
+  background-image: url("../images/octo-w.jpg");
   background-size: 310px;
   background-position: bottom;
 }
@@ -338,7 +339,7 @@ form {
 }
 
 #project-3 {
-  background-image: url("../images/squirtle2.jpg");
+  background-image: url("../images/squirtleduo-w.jpg");
   background-size: 320px;
   background-position: 35% 20px;
 }
@@ -348,7 +349,7 @@ form {
 }
 
 #project-4 {
-  background-image: url("../images/starbear.jpg");
+  background-image: url("../images/starbear-w.jpg");
   background-size: 300px;
 }
 
@@ -363,7 +364,7 @@ form {
 }
 
 #about-me {
-  width: 80%;
+  /*width: 80%;*/
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -377,7 +378,7 @@ form {
 }
 
 #profile-pic {
-  background-image: url("../images/me1.jpg");
+  background-image: url("../images/me.jpg");
   width: 250px;
   height: 250px;
   background-size: 400px;
