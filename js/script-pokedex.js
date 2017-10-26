@@ -99,13 +99,16 @@ function animateBoxes() {
   // document.getElementById
 }
 
+let searchBox = document.getElementById('searchBox');
+
 function getData() {
   let data = location.search.split("=");
   let value = decodeURI(data[1]);
   console.log(value);
-  document.getElementById('searchBox').value = value;
+  searchBox.value = value;
 }
 
 window.onload = create(pokemon);
 window.onload = location.search != '' && getData();
+window.onload = searchBox.value != '' && selector(searchBox.value, pokemon);
 // body.onload = animateBoxes();
