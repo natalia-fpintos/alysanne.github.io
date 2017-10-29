@@ -80,12 +80,12 @@ a:hover {
 
 #yarn {
   width: 55px;
-  margin: 5px;
+  margin: 3px;
   /*background-color: red;*/
 }
 
 #footer {
-  
+
 }
 
 #content {
@@ -102,17 +102,17 @@ a:hover {
 #boxes, #projects {
   width: 100%;
   height: auto;
-  margin-top: 20px;
+  /*margin: 20px;*/
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   align-content: space-evenly;
 }
 
 .box {
-  margin: 0;
+  margin: 25px;
   padding: 0;
   overflow: hidden;
   margin-top: 15px;
@@ -194,12 +194,13 @@ a:hover {
 
 #description {
   text-align: center;
+  margin-bottom: 30px;
 }
 
 form {
   width: 100%;
   margin-bottom: 20px;
-  margin-top: 20px;
+  /*margin-top: 20px;*/
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -353,18 +354,44 @@ form {
 }
 
 #project-4 {
+  background-image: url("../images/link.jpg");
+  background-size: 300px;
+  background-position: 0 75px;
+}
+
+#project-4 .text-background {
+  background: rgba(172, 194, 138, 1);
+
+}
+
+#project-5 {
   background-image: url("../images/starbear-w.jpg");
   background-size: 300px;
 }
 
-#project-4 .text-background {
+#project-5 .text-background {
   background: rgba(200, 200, 200, 1);
   background: rgba(245, 156, 164, 1);
 }
 
-#projects .multi-line {
-  padding-top: 5px;
-  padding-bottom: 2px;
+#miniature-1 {
+  background-image: url("../images/octopus-wbw.jpg");
+  background-size: 310px;
+  background-position: bottom;
+}
+
+#miniature-1 .text-background {
+  background: rgba(233, 172, 193, 1);
+}
+
+#miniature-2 {
+  background-image: url("../images/whale.jpg");
+  background-size: 300px;
+  background-position: bottom;
+}
+
+#miniature-2 .text-background {
+  background: rgba(143, 193, 227, 1);
 }
 
 #about-me {
