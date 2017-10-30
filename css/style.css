@@ -323,7 +323,7 @@ form {
 }
 
 #project-1 {
-  background-image: url("../images/wampa2.jpg");
+  background-image: url("../images/wampa2-w.jpg");
   background-size: 300px;
   background-position: bottom;
 }
@@ -354,7 +354,7 @@ form {
 }
 
 #project-4 {
-  background-image: url("../images/link.jpg");
+  background-image: url("../images/link-w.jpg");
   background-size: 300px;
   background-position: 0 75px;
 }
@@ -385,7 +385,7 @@ form {
 }
 
 #miniature-2 {
-  background-image: url("../images/whale.jpg");
+  background-image: url("../images/whale-w.jpg");
   background-size: 300px;
   background-position: bottom;
 }
@@ -407,7 +407,7 @@ form {
 }
 
 #profile-pic {
-  background-image: url("../images/me.jpg");
+  background-image: url("../images/me-w.jpg");
   width: 250px;
   height: 250px;
   background-size: 400px;
