@@ -112,7 +112,7 @@ a:hover {
 }
 
 .box {
-  margin: 25px;
+  margin: 10px;
   padding: 0;
   overflow: hidden;
   margin-top: 15px;
@@ -130,6 +130,22 @@ a:hover {
 .box.all-loaded {
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
+}
+
+.text-background {
+  padding: 0;
+  margin: 0;
+  width: 300px;
+  height: 70px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  color: #F7F7F7;
+  font-family: 'Raleway', 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 24px;
+  padding-bottom: 7px;
 }
 
 #box-1 {
@@ -154,22 +170,6 @@ a:hover {
 
 #box-3 .text-background {
   background: rgba(147, 200, 208, 0.65);
-}
-
-.text-background {
-  padding: 0;
-  margin: 0;
-  width: 300px;
-  height: 70px;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-end;
-  color: #F7F7F7;
-  font-family: 'Raleway', 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 24px;
-  padding-bottom: 7px;
 }
 
 /*.box-small {
@@ -339,7 +339,6 @@ form {
 }
 
 #project-2 .text-background {
-  background: rgba(255, 179, 179, 1);
   background: rgba(233, 172, 193, 1);
 }
 
@@ -353,24 +352,22 @@ form {
   background: rgba(186, 219, 224, 1);
 }
 
-#project-4 {
+#project-4, #zelda-1 {
   background-image: url("../images/link-w.jpg");
   background-size: 300px;
   background-position: 0 75px;
 }
 
-#project-4 .text-background {
+#project-4 .text-background, #zelda-1 .text-background {
   background: rgba(172, 194, 138, 1);
-
 }
 
-#project-5 {
+#project-5, #other-1 {
   background-image: url("../images/starbear-w.jpg");
   background-size: 300px;
 }
 
-#project-5 .text-background {
-  background: rgba(200, 200, 200, 1);
+#project-5 .text-background, #other-1 .text-background {
   background: rgba(245, 156, 164, 1);
 }
 
@@ -392,6 +389,120 @@ form {
 
 #miniature-2 .text-background {
   background: rgba(143, 193, 227, 1);
+}
+
+#starwars-1 {
+  background-image: url("../images/wampa-w.jpg");
+  background-size: 310px;
+  background-position: left bottom;
+}
+
+#starwars-1 .text-background {
+  background: rgba(200, 200, 200, 1);
+}
+
+#starwars-2 {
+  background-image: url("../images/utini-w.jpg");
+  background-size: 310px;
+  background-position: bottom;
+}
+
+#starwars-2 .text-background {
+  background: rgba(195, 165, 155, 1);
+}
+
+#starwars-3 {
+  background-image: url("../images/bb8-w.jpg");
+  background-size: 340px;
+  background-position: bottom;
+}
+
+#starwars-3 .text-background {
+  background: rgba(255, 194, 169, 1);
+}
+
+#starwars-4 {
+  background-image: url("../images/r2d2-w.jpg");
+  background-size: 330px;
+  background-position: bottom;
+}
+
+#starwars-4 .text-background {
+  background: rgba(143, 193, 227, 1);
+}
+
+#other-2 {
+  background-image: url("../images/cthulhu-w.jpg");
+  background-size: 300px;
+  background-position: bottom;
+}
+
+#other-2 .text-background {
+  background: rgba(135, 211, 160, 1);
+}
+
+#other-3 {
+  background-image: url("../images/cactus-w.jpg");
+  background-size: 300px;
+  background-position: bottom;
+}
+
+#other-3 .text-background {
+  background: rgba(151, 205, 190, 1);
+}
+
+#other-4 {
+  background-image: url("../images/companion-cube-w.jpg");
+  background-size: 300px;
+  background-position: bottom;
+}
+
+#other-4 .text-background {
+  background: rgba(254, 184, 192, 1);
+}
+
+#other-5 {
+  background-image: url("../images/sailor-moon-w.jpg");
+  background-size: 320px;
+  background-position: bottom;
+}
+
+#other-5 .text-background {
+  background: rgba(67, 124, 180, 1);
+}
+
+#other-6 {
+  background-image: url("../images/bigocto-w.jpg");
+  background-size: 300px;
+  background-position: bottom;
+}
+
+#other-6 .text-background {
+  background: rgba(236, 106, 106, 1);
+}
+
+#other-7 {
+  background-image: url("../images/direwolves-w.jpg");
+  background-size: 300px;
+  background-position: bottom;
+}
+
+#other-7 .text-background {
+  background: rgba(200, 200, 200, 1);
+}
+
+#other-8 {
+  background-image: url("../images/piggy-w.jpg");
+  background-size: 300px;
+  background-position: bottom;
+}
+
+#other-8 .text-background {
+  background: rgba(255, 200, 220, 1);
+}
+
+#sword {
+  width: 20px;
 }
 
 #about-me {
